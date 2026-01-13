@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PUI Connector</title>
+    <link rel="stylesheet" href="{{base_host}}/bundles/graphiql/graphiql/graphiql.css">
+    <link rel="stylesheet" href="{{base_host}}/bundles/graphiql/graphiql/graphiql-style.css">
+    <script id="graphiql-data" type="application/json">{"entrypoint":"{{base_host}}/graphql"}</script>
+</head>
+
+<body>
+<div id="graphiql">Loading...</div>
+    <script src="{{base_host}}/bundles/graphiql/react/react.production.min.js"></script>
+    <script src="{{base_host}}/bundles/graphiql/react/react-dom.production.min.js"></script>
+    <script src="{{base_host}}/bundles/graphiql/graphiql/graphiql.min.js"></script>
+    <script src="{{base_host}}/bundles/graphiql/graphiql/init-graphiql.js"></script>
+</body>
+</html>

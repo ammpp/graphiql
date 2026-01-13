@@ -1,0 +1,17 @@
+{
+    "name": "ammpp/GraphiQL",
+    "description": "Easy GraphQL web interface",
+    "type": "library",
+    "keywords": [
+        "GraphQL",
+        "GraphiQL"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7",
+        "symfony/http-kernel": "^6.4|^7.0|^8.0",
+        "symfony/http-foundation": "^6.4|^7.0|^8.0",
+        "symfony/framework-bundle": "^6.0 || ^7.0 || ^8.0",
+        "symfony/twig-bundle": "7.*"
+    }
+}
