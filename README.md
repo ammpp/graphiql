@@ -3,27 +3,47 @@ Simple and easy basic GRAPHQL web interface
 
 ## Installation
 
-1. Register it as a bundle
+1. Configure your composer.json
 ```shell
-config/bundles.php:
-
-  ammpp\GraphiQL\GraphiQLBundle::class => ['all' => true],
+{
+    "require": {
+        "ammpp/graphiql": "*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ammpp/graphiql.git"
+        }
+    ]
+}
 ```
 
-2. Install assets
+2. Download the library
+```shell
+composer require ammpp/graphiql
+```
+
+3. Register the library as a bundle
+```shell
+[config/bundles.php]
+
+  ammpp\graphiql\GraphiQLBundle::class => ['all' => true],
+```
+
+4. Install assets
 ```shell
 bin/console assets:install
 ```
 
-3. Register route to controller
+5. Register route to controller
 ```shell
-config/routes.yaml:
+[config/routes.yaml]
 
 graphiql:
     path: /graphql"
-    controller: ammpp\GraphiQL\GraphiQLBundleController
+    controller: ammpp\graphiql\GraphiQLBundleController
     methods: GET
 ```
 
-4. Enter the page
+6. Enter the page
    https://your-app/graphql
