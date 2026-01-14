@@ -1,5 +1,5 @@
 {
-    "name": "ammpp/GraphiQL",
+    "name": "ammpp/graphiql",
     "description": "Easy GraphQL web interface",
     "type": "symfony-bundle",
     "keywords": [
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ammpp\\GraphiQL\\": ""
+            "ammpp\\graphiql\\": ""
       }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace ammpp\GraphiQL;
+namespace ammpp\graphiql;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
